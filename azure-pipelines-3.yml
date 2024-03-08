@@ -10,10 +10,12 @@ trigger:
    exclude:
      - feature branches
 
-
-
 pool:
   vmImage: ubuntu-latest
+
+variables:
+  name: tag
+  value: '$'
 
 steps:
 - script: echo Hello, world!
